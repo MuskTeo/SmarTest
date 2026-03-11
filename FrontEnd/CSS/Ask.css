@@ -1,0 +1,232 @@
+/* ====== TEMĂ GENERALĂ ====== */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1a1a1a;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.container {
+  background-color: #2a2a3b;
+  width: 85%;
+  max-width: 900px;
+  border-radius: 20px;
+  padding: 25px 35px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ====== TITLU ====== */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  background: linear-gradient(90deg, #7b2cbf, #9d4edd, #c77dff);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* ====== BUTOANE ====== */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.nav-buttons button {
+  background-color: #7b2cbf;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 6px rgba(157, 78, 221, 0.4);
+}
+
+.nav-buttons button:hover {
+  background-color: #9d4edd;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 15px rgba(199, 125, 255, 0.6);
+}
+
+/* ====== FORM OPTIONS ====== */
+.form-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.form-options select {
+  background-color: #3b236b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: 0 0 8px rgba(123, 44, 191, 0.4);
+}
+
+.form-options select:hover {
+  background-color: #5a189a;
+  box-shadow: 0 0 12px rgba(157, 78, 221, 0.6);
+}
+
+/* ====== SECȚIUNE ÎNTREBARE ====== */
+.ask-section h3 {
+  margin-bottom: 10px;
+  color: #c77dff;
+  font-weight: 600;
+  text-shadow: 0 0 6px rgba(199, 125, 255, 0.3);
+}
+
+.ask-section textarea {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 12px;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #3b2a55;
+  color: #fff;
+  resize: vertical;
+  outline: none;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.ask-section textarea:focus {
+  box-shadow: 0 0 10px rgba(199, 125, 255, 0.7);
+}
+
+/* ====== BUTON ÎNTREABĂ ====== */
+#ask-btn {
+  margin-top: 15px;
+  background-color: #c77dff;
+  color: #111;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#ask-btn:hover {
+  background-color: #e0aaff;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(199, 125, 255, 0.7);
+}
+
+/* ====== ZONĂ RĂSPUNS ====== */
+.answer-box {
+  margin-top: 20px;
+  background-color: #2e1f47;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 100px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.5s ease;
+}
+
+.answer-box .placeholder {
+  color: #a6a6a6;
+  font-style: italic;
+}
+
+/* ====== MINMAX PANEL (aceeași estetică cu pagina) ====== */
+.minmax-panel {
+  margin: 12px 0 14px;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #2e1f47;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.45);
+  animation: fadeIn 0.35s ease;
+}
+
+.minmax-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.minmax-title {
+  margin: 0;
+  color: #c77dff;
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(199, 125, 255, 0.3);
+  font-size: 1.05rem;
+}
+
+.minmax-badge {
+  background: rgba(199, 125, 255, 0.18);
+  border: 1px solid rgba(199, 125, 255, 0.35);
+  color: #e0aaff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.3px;
+  box-shadow: 0 0 10px rgba(199, 125, 255, 0.25);
+}
+
+.minmax-textarea {
+  width: 100%;
+  min-height: 70px;
+  border-radius: 12px;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #3b2a55;
+  color: #fff;
+  resize: vertical;
+  outline: none;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.minmax-textarea:focus {
+  box-shadow: 0 0 10px rgba(199, 125, 255, 0.7);
+}
+
+.minmax-hint {
+  margin: 10px 2px 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
+  color: #d9c2ff;
+}
+
+.minmax-hint b {
+  color: #ffffff;
+}
+
+/* Monospace doar când userul e în modul MinMax */
+.container.mode-minmax #user-question {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  min-height: 90px;
+}
+
+/* ====== ANIMAȚIE ====== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

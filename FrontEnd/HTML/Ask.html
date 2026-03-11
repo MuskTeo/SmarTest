@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartTest-App | Ask</title>
+  <link rel="stylesheet" href="..//CSS//Ask.css">
+  <script src="..//JS//Ask.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SmartTest-App</h1>
+    </header>
+
+    <div class="nav-buttons">
+      <button>Get Questions</button>
+    </div>
+
+    <form class="form-options">
+      <select name="tip">
+        <option selected disabled>Tip</option>
+        <option>Strategie Optima</option>
+        <option>Echilibru Nash</option>
+        <option>Asignari</option>
+        <option>MinMax</option>
+        <option>search</option>
+        <option>bayes</option>
+      </select>
+
+      <select name="model">
+        <option selected disabled>Metod</option>
+        <option>Template</option>
+        <option>Optim-Mode</option>
+        <option>AlphaBeta</option>
+      </select>
+    </form>
+
+    <section class="ask-section">
+      <h3>Întrebare nouă:</h3>
+
+      <textarea id="user-question" placeholder="Scrie aici întrebarea ta..."></textarea>
+
+      <div id="minmax-hint" class="hint-card" style="display:none;">
+        <div class="hint-title">🎯 MinMax / AlphaBeta</div>
+        <div class="hint-row">
+          <span class="pill">Format</span>
+          <span class="hint-text">folosește doar <b>MAX</b>/<b>MIN</b>, <b>()</b>, virgule și numere întregi</span>
+        </div>
+        <div class="hint-row">
+          <span class="pill">Exemplu</span>
+          <code class="hint-example">MAX(MIN(3,5),MIN(2,9))</code>
+        </div>
+        <div class="hint-row">
+          <span class="pill">Răspuns</span>
+          <span class="hint-text">scrie: <b>valoare frunze</b> (ex: <b>3 3</b>)</span>
+        </div>
+      </div>
+
+      <button id="ask-btn">Întreabă</button>
+
+      <div class="answer-box" id="answer-box">
+        <p class="placeholder">Aici va apărea răspunsul...</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

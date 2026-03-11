@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartTest-App</title>
+  <link rel="stylesheet" href="..//CSS//MainPage.css" />
+  <script src="..//JS//MainPage.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SmartTest-App</h1>
+    </header>
+
+    <div class="nav-buttons">
+      <button>Ask a question</button>
+      <button>Answers</button>
+      <button>Test</button>
+      <button class="send-btn">Send</button>
+    </div>
+
+    <form class="form-options">
+      <select name="numar-intrebari">
+        <option selected disabled>Număr Întrebări</option>
+        <script>
+          for (let i = 1; i <= 20; i++) {
+            document.write(`<option>${i}</option>`);
+          }
+        </script>
+      </select>
+
+      <select name="metod">
+        <option selected disabled>Metod</option>
+        <option>Template</option>
+        <option>Optim-Mode</option>
+        <option>AlphaBeta</option>
+      </select>
+
+      <select name="Tipul De Intrebare">
+        <option selected disabled>Tipul de întrebare</option>
+        <option>Strategie Optima</option>
+        <option>Echilibru Nash</option>
+        <option>asignari</option>
+        <option>MinMax</option>
+        <option>mix</option>
+        <option>search</option>
+        <option>bayes</option>
+      </select>
+    </form>
+
+    <section class="question-area">
+      <h3>Întrebări Active:</h3>
+      <div id="questions-box"></div>
+    </section>
+  </div>
+</body>
+</html>

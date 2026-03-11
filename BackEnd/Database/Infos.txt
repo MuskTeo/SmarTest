@@ -1,0 +1,42 @@
+{
+    "N-Queens": {
+        "strategy": "Backtracking / DFS",
+        "instances": ["tablă 8x8", "tablă 10x10", "tablă 12x12"]
+    },
+    "Generalised Hanoi": {
+        "strategy": "Recursiv / DFS",
+        "instances": ["3 turnuri și 5 discuri", "4 turnuri și 6 discuri", "5 turnuri și 4 discuri"]
+    },
+    "Graph Coloring": {
+        "strategy": "Greedy / Heuristică",
+        "instances": ["graf cu 5 noduri", "graf complet cu 6 noduri", "graf bipartit cu 10 noduri"]
+    },
+    "Knight’s Tour": {
+        "strategy": "DFS cu backtracking",
+        "instances": ["tablă 5x5", "tablă 6x6", "tablă 8x8"]
+    },
+    "Labirint": {
+        "strategy": "A* sau BFS",
+        "instances": ["labirint 10x10", "labirint cu obstacole variabile", "labirint dreptunghiular 15x5"]
+    },
+    "Puzzle-ul celor 8 piese": {
+        "strategy": "A*",
+        "instances": ["configurație 1-2-3-4-5-6-7-8-X", "configurație inversată", "stare amestecată random"]
+    },
+    "Hill Climbing Optimization": {
+        "strategy": "Hill Climbing",
+        "instances": ["funcție cost sinusoidală", "funcție convexă", "funcție cu mai multe minime locale"]
+    },
+    "Planificare AI": {
+        "strategy": "A*",
+        "instances": ["planificarea drumurilor pentru robot", "organizarea unei secvențe de acțiuni", "navigarea între camere"]
+    },
+    "Colorarea unui graf complex": {
+        "strategy": "Greedy",
+        "instances": ["graf planar cu 6 culori", "graf neorientat cu 8 noduri", "graf cu restricții de culoare"]
+    },
+    "Turnurile din Hanoi": {
+        "strategy": "Recursiv / DFS",
+        "instances": ["3 bețe și 4 discuri", "4 bețe și 5 discuri", "5 bețe și 3 discuri"]
+    }
+}
